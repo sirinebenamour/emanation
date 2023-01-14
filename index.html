@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/start.css" />
+    <meta name="authoring-tool" content="Adobe_Animate_CC" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="./js/eau.js"></script>
+    <link rel="shortcut icon" type="image/png" href="./images/site_icon.png" />
+
+    <link rel="stylesheet" href="start.css" />
+    <title>Exhibition</title>
+  </head>
+
+  <body onload="init();" style="margin: 0px">
+    <div class="vertical-section">
+      <header>
+        <video
+          class="background-video"
+          autoplay
+          loop
+          muted
+          poster="img/emanation_video.mp4"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <source src=img/emanation_video.mp4 type="video/mp4" />
+        </video>
+      </header>
+
+      <div id="introduction" class="introduction section">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          class="container_intro"
+        >
+          <div class="intro">
+            <p class="intro-text">
+              You are about to experience a unique exhibition about the
+              influence of our existence on our surroundings. You will soon find
+              out the impact of human auras between each other by witnessing
+              invisible phenomena all over the following website.
+            </p>
+            <h4 class="intro-title">by emanation</h4>
+          </div>
+        </div>
+      </div>
+
+      <!--JAVASCRIPT ANIMATION TITRE-->
+      <script>
+        const img = document.querySelector("header");
+
+        window.addEventListener("scroll", () => {
+          let value = window.scrollY / 500 + 1;
+          img.style.transform = `scale(${value})`;
+        });
+      </script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <!--END OF JAVASCRIPT-->
+    </div>
+
+    <div class="sticky-container">
+      <main>
+        <!-- LA TU COLLES TOUTES TES DIV QUI DOIVENT ETRE A LHORIZONTALE
+        - tu peux enlever les class first... c'était juste pour mettre de la couleur
+        - laisse bien les sections autour de chacune de tes div par contre -->
+        <section class="first">
+          <div class="container_data data">
+            <div class="exhibitions commun section">
+              <p class="exhibitions_number">4</p>
+              <p class="exhibitions_text">
+                exhibitions <br />
+                per day
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="deux">
+          <div class="dates commun section">
+            <p class="dates_from">from</p>
+            <br />
+            <p class="dates_days">
+              <span class="pink">monday</span> to
+              <span class="pink">saturday</span>
+            </p>
+            <br />
+            <p class="dates_hours">
+              <span class="pink">10am</span> to <span class="pink">5pm</span>
+            </p>
+          </div>
+        </section>
+        <section class="trois">
+          <div class="camera commun section">
+            <p class="camera_number">20</p>
+            <p class="camera_text">
+              thermal imaging<br />
+              cameras
+            </p>
+          </div>
+        </section>
+        <section class="quatre">
+          <div class="invisible commun section">
+            <p class="invisible_number">100%</p>
+            <p class="invisible_text">invisible</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="vertical-section">
+      <!-- LA TU COLLES TOUTES TES DIV D'APRES (celles qui se scrollent re normalement) -->
+      <!--SALLE 1-->
+      <div class="salle1 section">
+        <div class="salle1_mains">
+          <img
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="3000"
+            data-aos-offset="500"
+            src="./img/main6.png"
+            class="mains main6"
+          />
+          <img
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="2400"
+            data-aos-offset="400"
+            src="./img/main5.png"
+            class="mains main5"
+          />
+          <img
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="1800"
+            data-aos-offset="300"
+            src="./img/main4.png"
+            class="mains main4"
+            style="width: 12%"
+          />
+          <img
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="1200"
+            data-aos-offset="200"
+            src="./img/main3.png"
+            class="mains main3"
+            style="width: 14%"
+          />
+          <img
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="600"
+            data-aos-offset="100"
+            src="./img/main2.png"
+            class="mains main2"
+            style="width: 13%"
+          />
+          <img
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="10"
+            src="./img/main1.png"
+            class="mains main1"
+          />
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          class="salle1_texte"
+        >
+          <p>
+            You will enter a large empty room, completely painted (all walls,
+            floor and ceiling) using a black thermochromic pigment. A
+            thermochromic material is a material whose pigment and hue change
+            due to a thermal variation (heat or cooling) In this occurrence, the
+            ink chosen is black under 31°C, becoming transparent when above.
+            Visitors can then play with this phenomenon to observe color changes
+            and forms to be drawn on the web. The aim is to propose an
+            attractive way to enter the world of our exhibition: Emanation.
+          </p>
+        </div>
+      </div>
+
+      <!--SALLE 2-->
+      <div class="salle2 section">
+        <div class="salle2_texte">
+          <p>
+            In the 4 corners of the room, cameras, film and retranscribe live
+            what they are filming, so that you will be able to observe your
+            thermal doppelganger in front of you on the wall, thanks to a video
+            projector. You will also observe changes in body temperature thanks
+            to color changes in their silhouette. This experiment is the first
+            approach, which will grow more and more in crescendo. Then, in the
+            middle of the room will be arranged two hot air blowers and two cold
+            air blowers, both with a button that you will be able to play with
+            as you please. The camera will catch the phenomena and project it on
+            the wall, showing the thermal reactions they cause on the body. We
+            want to integrate your interactions at each stage of the journey to
+            offer you an unforgettable experience.
+          </p>
+        </div>
+        <div class="salle_air">
+          <img src="./img/nuagegauche.png" id="nuage_gauche" />
+          <img src="./img/nuagedroit.png" id="nuage_droite" />
+        </div>
+      </div>
+
+      <!--SALLE 3 : GLACON-->
+      <div class="salle_glacon">
+        <div
+          class="salleg_texte"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
+          <p>
+            In this third room, you will be able to continue your experience in
+            a ludic and interactive manner. You will find five large ice cubes
+            arranged in random patterns on transparent stands (They are meant to
+            catch the water from them melting). Thanks to this, you’ll be able
+            to see the transition from solid to liquid, somewhat of a gateway to
+            our fourth room. Just as with the first two, the third is also
+            painted black to really plunge you in a parallel universe. Once you
+            enter the room, you’ll be given a container of warm water, which you
+            will be prompted to pour onto the cube to cause reactions that you
+            will at first not be able to see, but then be able to witness using
+            provided portable thermal cameras. As a bonus, your passage will
+            sculpt the cubes ever so slightly, causing a collaborative sculpture
+            to take form at the end thanks to your actions.
+          </p>
+        </div>
+        <div class="salleg_image">
+          <img data-aos="zoom-in" class="glacon" src="./img/glacon.png" />
+        </div>
+      </div>
+
+      <!--ANIMATION SALLE 4 : EAU-->
+
+      <div data-aos="zoom-in" id="salle3_texte" class="salle3_texte">
+        <p id="salle3_texte">
+          In the fourth and last room of the exhibition, you’ll have a chance to
+          interact with a system that pours water in a container with the
+          purpose of changing its temperature while causing fluid movement,
+          visible with a fixed thermal camera. As soon as it reaches a limit,
+          it’ll empty back into the original tubes the water came from. The room
+          will still be painted black, with the buttons being backlit in their
+          corresponding color, with a screen to show you the camera’s view so
+          you can compare it to yours.
+        </p>
+      </div>
+      <div id="animation_container">
+        <canvas id="canvas"></canvas>
+        <div id="dom_overlay_container"></div>
+      </div>
+
+      <!--JAVASCRIPT ANIMATION NUAGES-->
+      <script>
+        window.addEventListener("scroll", function () {
+          var element = document.getElementById("nuage_gauche");
+          var position = element.getBoundingClientRect();
+          if (position.top <= window.innerHeight) {
+            element.classList.add("slide-in-left");
+          }
+        });
+      </script>
+
+      <!--LA FIN ENFIN-->
+      <div class="home">
+        <div class="container-home">
+          <div class="row">
+            <div class="home-text">
+              <h1>EMANATION</h1>
+              <p class="animate-text">
+                <span>REVEAL THE INVISIBLE</span>
+                <span>FEEL THE INVISIBLE</span>
+                <span>TOUCH THE INVISIBLE</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const txts = document.querySelector(".animate-text").children,
+          txtsLen = txts.length;
+        let index = 0;
+        const textInTimer = 3000,
+          textOutTimer = 2800;
+
+        function animateText() {
+          for (let i = 0; i < txtsLen; i++) {
+            txts[i].classList.remove("text-in", "text-out");
+          }
+          txts[index].classList.add("text-in");
+
+          setTimeout(function () {
+            txts[index].classList.add("text-out");
+          }, textOutTimer);
+
+          setTimeout(function () {
+            if (index == txtsLen - 1) {
+              index = 0;
+            } else {
+              index++;
+            }
+            animateText();
+          }, textInTimer);
+        }
+
+        window.onload = animateText;
+      </script>
+    </div>
+  </body>
+  <script src="./js/scroll.js" defer></script>
+  <script src="path/to/vanilla.js"></script>
+  <script src="./js/video.js"></script>
+  <script src="./js/eau_affichage.js" defer></script>
+  <script src="./js/nuages.js" defer></script>
+</html>

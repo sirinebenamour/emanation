@@ -1,0 +1,525 @@
+/*FONTS*/
+
+@font-face {
+  font-family: "Akira";
+  src: url("../fonts/Akira Expanded Demo.otf");
+}
+@font-face {
+  font-family: "George";
+  src: url("../fonts/Louis George Cafe.ttf");
+}
+
+.Akira {
+  color: white;
+  font-family: "Akira", sans-serif;
+}
+.George {
+  color: white;
+  font-family: "George", sans-serif;
+}
+
+/* CSS START*/
+
+/*CSS JEAJEANNE*/
+html,
+body {
+  margin: 0;
+  /*font-size: 80px;  tu peux enlever ça normalement */
+}
+
+.vertical-section {
+  /* height: 100vh; ça aussi */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  overflow-x: hidden;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+section {
+  /* pour mettre chaque section a 100% de hauteur et 100% de largueur */
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+}
+
+/* ça tu peux enlever c'est juste pour qu'on les voit 
+
+.first {
+  background-color: red;
+}
+
+.deux {
+  background-color: green;
+}
+
+.trois {
+  background-color: yellow;
+}
+
+.quatre {
+  background-color: blue;
+}*/
+
+/*FIN CSS JEAJEANNE*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #1e1e1e;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 45vw;
+  position: relative;
+}
+
+video {
+  width: 80%;
+  object-fit: cover;
+  user-select: none;
+  margin: auto;
+  display: flex;
+}
+
+.cacher {
+  opacity: 0;
+}
+header::before {
+  content: "";
+  z-index: 400;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+}
+
+.introduction {
+  background-color: #1e1e1e;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5rem;
+  padding: 10rem 5rem;
+  color: #fff;
+  position: relative;
+}
+
+/* 2E ANIMATION */
+.intro-title {
+  font-size: 1.5vw;
+  margin-bottom: 10px;
+  font-family: "Akira";
+  text-align: center;
+  color: #e84429;
+}
+
+.introduction {
+  width: 65%;
+  margin: auto;
+  padding: 0;
+}
+
+.intro-text {
+  font-family: "George";
+  font-size: 1.3vw;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+/*CSS DATA*/
+html {
+  /*overflow-x: hidden;
+  overflow-y: hidden; 
+  width: 1920px;
+  height: auto;
+  white-space: nowrap;*/
+  scroll-snap-type: mandatory;
+  scrollbar-width: none;
+  background-color: #1e1e1e;
+  margin: 0px;
+  padding: 0px;
+}
+.container_data {
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.commun {
+  width: 1920px;
+  height: 700px;
+  display: flex;
+  color: white;
+  margin-bottom: 7%;
+  font-family: "Akira";
+}
+
+/*EXHIBITIONS*/
+
+.exhibitions {
+  /*background-color: orange;*/
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  margin: auto;
+}
+
+.exhibitions_number {
+  display: flex;
+  font-size: 25vw;
+  color: #01b1b7;
+  margin-left: 17%;
+}
+
+.exhibitions_text {
+  display: flex;
+  font-size: 5.5vw;
+  margin: auto;
+}
+
+/*DATES*/
+
+.dates {
+  /*background-color: red;*/
+  display: flex;
+  flex-direction: column;
+  font-size: 5vw;
+  width: 100vw;
+  padding: 11% 7%;
+}
+
+.dates_days {
+  margin-top: -2%;
+}
+
+.dates_hours {
+  margin-top: -6%;
+}
+
+.pink {
+  color: #e8316e;
+}
+
+/*CAMERAS*/
+
+.camera {
+  width: 100vw;
+  /*background-color: green;*/
+  display: flex;
+  flex-direction: column;
+  padding: 7% 11%;
+}
+
+.camera_number {
+  display: flex;
+  font-size: 17vw;
+  color: #ebb135;
+}
+
+.camera_text {
+  display: flex;
+  font-size: 5vw;
+  margin-left: 7%;
+  margin-top: -2%;
+}
+
+/*INVISIBLE*/
+
+.invisible {
+  width: 100vw;
+  /*background-color: purple;*/
+  display: flex;
+  flex-direction: column;
+  padding: 9% 12%;
+}
+
+.invisible_number {
+  display: flex;
+  font-size: 20vw;
+  color: #a3c737;
+}
+
+.invisible_text {
+  display: flex;
+  font-size: 5vw;
+  margin-top: -3%;
+}
+
+/*SALLE 1 : MAINS*/
+
+.mains {
+  width: 23% !important;
+}
+.salle1_mains {
+  margin: 0;
+  margin-top: 6%;
+  padding: 0;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main6 {
+  margin-top: -7%;
+  margin-left: 40%;
+}
+.main5 {
+  margin-top: -2%;
+  margin-left: 57%;
+}
+.main4 {
+  margin-top: -8%;
+  margin-left: 18%;
+}
+.main3 {
+  margin-top: -12%;
+  margin-left: 38%;
+}
+.main2 {
+  margin-top: -4%;
+  margin-left: 0%;
+}
+.main1 {
+  margin-top: -16%;
+  margin-left: 26%;
+}
+.salle1_texte {
+  color: white;
+  font-family: "George";
+  font-size: 1.3vw;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.salle1_texte P {
+  width: 80%;
+}
+
+.salle1 {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  width: 100%;
+}
+
+/*SALLE 2 : air*/
+.salle2 {
+  position: relative;
+  margin-top: 40%;
+}
+.salle2_texte {
+  position: relative;
+  color: white;
+  font-family: "George";
+  font-size: 1.3vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+.salle_air {
+  margin-top: -40%;
+  display: flex;
+  flex-direction: row;
+}
+#nuage_gauche {
+  margin-left: -50%;
+}
+#nuage_gauche,
+#nuage_droite {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+/*ANIMATION NUAGES*/
+.animation_gauche {
+  animation-duration: 3s;
+  animation-name: slideInleft;
+}
+
+@keyframes slideInleft {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: -50%;
+  }
+}
+
+.animation_droite {
+  animation-duration: 3s;
+  animation-name: slideInright;
+}
+
+@keyframes slideInright {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+/*SALLE 3 : glacon*/
+.salle_glacon {
+  display: flex;
+  flex-direction: row;
+  padding: 10%;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.glacon {
+  width: 65%;
+  margin: auto;
+  display: flex;
+}
+
+.salleg_texte {
+  position: relative;
+  z-index: 3;
+  color: white;
+  font-family: "George";
+  font-size: 1.3vw;
+  text-align: center;
+  width: 60%;
+}
+.salleg_image {
+  width: 100%;
+}
+/*ANIMATION EAU*/
+
+#animation_container {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -45%;
+}
+
+#canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#dom_overlay_container {
+  pointer-events: none;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  display: block;
+}
+
+.visible {
+  display: block !important;
+  position: relative;
+  z-index: 2;
+}
+
+/*SALLE 4 : EAU*/
+.salle3_texte {
+  position: relative;
+  z-index: 3;
+  color: white;
+  font-family: "George";
+  font-size: 1.3vw;
+  text-align: center;
+  width: 50%;
+  margin: 15% auto;
+}
+
+/* LA FINNNNNN*/
+.container-home {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: -2%;
+}
+
+.home {
+  margin: 0;
+  font-family: "Akira";
+  font-weight: 400;
+  height: 100vh;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 15px;
+  position: relative;
+}
+
+.home .home-text {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.home .home-text h1 {
+  color: #ffffff;
+  font-size: 7vw;
+  color: #ffffff;
+  line-height: 56px;
+  margin: 0 0 20px;
+}
+.home .home-text p {
+  margin: 0;
+  overflow: hidden;
+}
+.home .home-text p span {
+  font-size: 2.5vw;
+  color: #01b1b7;
+  display: inline-block;
+  line-height: 46px;
+  display: none;
+}
+
+.home .home-text p span.text-in {
+  display: block;
+  animation: textIn 0.5s ease;
+}
+.home .home-text p span.text-out {
+  animation: textOut 0.5s ease;
+}
+@keyframes textIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes textOut {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
